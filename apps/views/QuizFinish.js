@@ -18,7 +18,7 @@ export class Finish extends React.Component {
     return (
       <View style={StyleSheet.container}>
           <Text>Your quiz score was {userScore}</Text>
-          <Text>You missed on {questionsMissed} out of {totalQuestions} questions</Text>
+          <Text>You missed on {questionsMissed} out of {totalQuestions} questions.</Text>
 
           <TouchableHighlight onPress={this.exitQuiz} style={styles.button}>
               <Text>Finish Quiz</Text>
@@ -39,6 +39,6 @@ const styles = StyleSheet.create({
     button: {
         alignItems: 'center',
         justifyContent: 'center',
-        height: '10%'
+        height: '30%',
     }
 });

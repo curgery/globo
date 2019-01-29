@@ -72,9 +72,9 @@ export class Quiz extends React.Component {
                         <Question
                             question={item.question}
                             answer1={item.answer1}
-                            answer1={item.answer2}
-                            answer1={item.answer3}
-                            answer1={item.answer4}
+                            answer2={item.answer2}
+                            answer3={item.answer3}
+                            answer4={item.answer4}
                             correctAnswer={item.correctAnswer}
                             scoreUpdate={this.updateScore}
                         />
@@ -89,7 +89,7 @@ export class Quiz extends React.Component {
             )}
 
             
-            { !this.state.completedQuiz && (
+            {   this.state.completedQuiz && (
                 <TouchableHighlight onPress={this.finishQuiz} style={styles.enabled} >
                     <Text>Finished</Text>
                 </TouchableHighlight>

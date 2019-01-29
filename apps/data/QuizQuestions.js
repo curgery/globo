@@ -1,7 +1,7 @@
 export const QuizData = {
     questions: [
         {
-           question: 'What language to dyou use with libraties such as React and Angular?',
+           question: 'What language do you use with libraries such as React and Angular?',
            answer1: 'PHP',
            answer2: 'JAVA',
            answer3: 'JavaScript',
@@ -26,7 +26,8 @@ export const QuizData = {
             answer4: 'boolean',
             correctAnswer: 'answer2',
             key: '1C'
-         }, {
+         },
+         {
             question: 'How do you indicate values are not equal in JavaScirpt?',
             answer1: '===',
             answer2: '=>',

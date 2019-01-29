@@ -34,22 +34,22 @@ export class Question extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-          { !this.setState.selected && (
+          { !this.state.selected && (
               <View style={styles.container}>
                     <Text style={styles.questionText}>{this.props.question}</Text>
-                    <TouchableHighlight underlayColor='#d3d3d3'> onPress={() => this.chooseAnswer('answer1')}>
+                    <TouchableHighlight underlayColor='#d3d3d3' onPress={() => this.chooseAnswer('answer1')}>
                         <Text style={styles.answerText}>{this.props.answer1}</Text>
                     </TouchableHighlight>
 
-                    <TouchableHighlight underlayColor='#d3d3d3'> onPress={() => this.chooseAnswer('answer2')}>
+                    <TouchableHighlight underlayColor='#d3d3d3' onPress={() => this.chooseAnswer('answer2')}>
                         <Text style={styles.answerText}>{this.props.answer2}</Text>
                     </TouchableHighlight>
 
-                    <TouchableHighlight underlayColor='#d3d3d3'> onPress={() => this.chooseAnswer('answer3')}>
+                    <TouchableHighlight underlayColor='#d3d3d3' onPress={() => this.chooseAnswer('answer3')}>
                         <Text style={styles.answerText}>{this.props.answer3}</Text>
                     </TouchableHighlight>
 
-                    <TouchableHighlight underlayColor='#d3d3d3'> onPress={() => this.chooseAnswer('answer4')}>
+                    <TouchableHighlight underlayColor='#d3d3d3' onPress={() => this.chooseAnswer('answer4')}>
                         <Text style={styles.answerText}>{this.props.answer4}</Text>
                     </TouchableHighlight>
               </View>

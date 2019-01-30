@@ -28,7 +28,7 @@ export class Blog extends React.Component {
     }
     
     chooseBlog = (blogID) => {
-        console.log(`Blog ID chosen: ${blogID}`);
+        this.props.navigation.navigate('BlogDetailRT', {blogId: blogID} );
     }
 
   render() {
@@ -72,8 +72,7 @@ export class BlogItem extends React.Component {
         <img src=${this.props.imageSrc} />
         <h1>${this.props.title}</h1>
         ${this.props.excerpt}
-      </a>
-      
+      </a> 
       `;
     return (
       <View style={{borderBottomWidth: 2, borderBottomColor: '#000000', borderStyle:'solid' }}>
